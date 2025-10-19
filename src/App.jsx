@@ -27,7 +27,10 @@ function App() {
   return (
     <>
       <h1>Veeva Approved Email Preview Extension</h1>
+      
       <VeevaTokens tokens={veevaTokens} />
+
+      List of Veeva <a href="https://crmhelp.veeva.com/doc/Content/CRM_topics/Multichannel/ApprovedEmail/ManageCreateContent/CreatingContent/ConfigTokens.htm">tokens</a>.
     </>
   )
 }

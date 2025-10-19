@@ -1,10 +1,10 @@
 # Veeva Approved Email Previewer Extension
 
-A browser extension that allows you to preview Veeva approved emails locally with enhanced token visualization and management.
+A browser extension that allows you to preview Veeva approved emails locally with enhanced token visualization and management built using [Vite](https://vite.dev/).
 
 ## Overview
 
-This browser extension helps developers preview Veeva approved email templates HTML files directly in their web browser. It automatically detects Veeva tokens (e.g., `{{token_name}}`), provides visual highlighting, and offers an interactive interface to manage and preview token values.
+This browser extension helps developers preview Veeva approved email templates HTML files directly in their web browser. It automatically detects [Veeva tokens](https://crmhelp.veeva.com/doc/Content/CRM_topics/Multichannel/ApprovedEmail/ManageCreateContent/CreatingContent/ConfigTokens.htm) (e.g., `{{accFname}}`), provides visual highlighting, and offers an interactive interface to manage and preview token values.
 
 ## Features
 
@@ -14,33 +14,12 @@ This browser extension helps developers preview Veeva approved email templates H
 
 ## Installation
 
-### Install as Unpacked Extension
+To install the extension for development, load it as an unpacked extension in your browser:
 
-1. Clone this repository:
-
-   ```bash
-   git clone <repository-url>
-   cd veeva-approved-email-previewer
-   ```
-
-2. Install dependencies:
-
-   ```bash
-   npm install
-   ```
-
-3. Build the extension:
-
-    ```bash
-    npm run build
-    ```
-
-4. Load the extension in your browser:
-
-   - Open Chrome and navigate to `chrome://extensions/`
-   - Enable "Developer mode" (toggle in top-right corner)
-   - Click "Load unpacked"
-   - Select the `dist` folder from this project
+1. [Download the latest release](https://github.com/Pr0xicide/veeva-approved-email-previewer/releases) and unzip
+2. Open your browser and go to the Extensions page (`chrome://extensions/` in Chrome).
+3. Enable "Developer mode" in the top right corner.
+4. Click on "Load unpacked" and select the unzipped `release` folder
 
 ## Development
 
@@ -52,16 +31,10 @@ This browser extension helps developers preview Veeva approved email templates H
 
 ## Usage
 
-### Basic Usage
+### Browser Toolbar
 
-1. Open a Veeva approved email HTML file in your browser
-2. Click the extension icon in your browser toolbar
-3. The popup will display all Veeva tokens found in the current email
-4. Click the "Preview Email" button that appears on the page to toggle preview mode
+Click the extension icon in your browser toolbar to view all the Veeva approved email tokens
 
 ### Preview Mode
 
-When preview mode is enabled:
-
-- Tokens are visually highlighted in the email
-- You can interact with token values
+Click on the preview button to see placeholder values for the Veeva approved email tokens found in the body of the HTML file. If any tokens are found in an attribute of an HTML element those will be unaffected.
