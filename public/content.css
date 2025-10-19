@@ -1,0 +1,20 @@
+.btn-preview-veeva-approved-email {
+  background-color: #ff9e16;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+}
+
+[data-formatted-token] {
+  display: none;
+}
+
+.veeva-approved-email-previewer-enabled [data-formatted-token] {
+  display: inline;
+}
+
+.veeva-approved-email-previewer-enabled [data-original-token] {
+  display: none;
+}
+
