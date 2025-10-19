@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+tr:hover {
+  background-color: orange;
+  color: white;
+}
